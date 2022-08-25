@@ -31,6 +31,8 @@ let opciones2=["pandereta ",
                  "mause",
                  "paris"
         ]
+let imegenes=["GUITARRA.png", "ELEFANTE.png", "TURQUESA.png", "MARIELA.png", "TECLADO.png", "INGLATERRA.png" ]
+
 
 //variable que guarda la cantidad de palabras ya jugadas
 let cantPalabrasJugadas = 0;
@@ -98,6 +100,8 @@ function cargarNuevaPalabra(){
                  "mause",
                  "paris"
         ]
+        let imegenes=["GUITARRA.png", "ELEFANTE.png", "TURQUESA.png", "MARIELA.png", "TECLADO.png", "INGLATERRA.png" ]
+
     }
 
 
@@ -140,6 +144,8 @@ function cargarNuevaPalabra(){
     document.getElementById("opcion1").innerHTML = opciones1[posActual];
 
    document.getElementById("opcion2").innerHTML = opciones2[posActual];
+
+   document.getElementById("imagen").src = "img/" + imegenes[posActual];
 
    //elimino el elemento ya seleccionado del arreglo.
     //splice(posActual,1): A partir de la posicon posActual elimino 1 elemento
