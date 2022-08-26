@@ -4,164 +4,49 @@
     font-family: 'Open Sans';
 }
 body{
-    height: 100%;
     background: #FCE8AE;
+    background: url(img/redabeja1.png);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .inicial img{
     display: block;
-    margin-left: 100xp;
+    margin-left: auto;
     margin-rigth:auto;
-    width: 50%;
-    border: 5px solid #FF8A00;
+    width: 100%;
 }
-
-
-
-
 
 .juego img{
-    display: block;
-    margin-left: 100xp;
-    margin-rigth:auto;
-    width: 50%;
-    border: 5px solid #FF8A00;
-
-}
-
-
-
-
-.help img{
-    display: block;
-    margin-left: 25px;
-    margin-rigth:25px;
+    max-width: 100px;
     width: 100%;
-
- }
+    height: auto;
+    display: flex;
+    justify-center: center;
+    position: relative;
+    left: 400px;
+}
+.imgen img{
+    max-width: 10px;
+    width: 100%;
+}
 
 .final img{
     display: block;
-    margin-left: 100xp;
+    margin-left: auto;
     margin-rigth:auto;
-    width: 50%;
-    border: 5px solid #FF8A00;
+    width: 100%;
 }
 
 section{
     height: 50%;
-    width: 820px;
+    width: 1000px;
     background-color: #FFA841;
     border: 3px solid #FF8A00;
     color: black;
     padding: 60px;
 }
-#palabra{
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
-    border: 5px solid #FF8A00;
-}
-.letra{
-    height: 50px;
-    width: 50px;
-    border: 5px solid #FF8A00;
-    background: #FCE8AE;
-    text-align: center;
-    margin: 4px;
-    font-weight: 600;
-    font-size: 30px;
-}
-
-.pintar{
-    background-color: #FF8A00;;
-}
-.pintarError{
-    background-color: red;
-}
-
-
-button{
-    display: block;
-    width: fit-content;
-    margin: auto;
-    background-color: transparent;
-    border: 8px solid #FF8A00;
-    border-radius: 20px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 10px;
-    margin-top: 30px;
-    cursor: pointer;
-    transition: .5s;
-}
-
-button:hover{
-    background-color: #FCE8AE;
-}
-
-#inicial{
-    display: none;
-    justify-content: center;
-    margin: 40px 0;
-}
-
-#juego{
-    display: block;
-    justify-content: center;
-    margin: 40px 0;
-}
-
-#final{
-    display: none;
-    justify-content: center;
-    margin: 40px 0;
-}
-
-
-.ayuda1{
-    width: 200px;
-    height: 200px;
-    margin-bottom:20px;
-    display: inline-block;
-    position: relative;
-    left: 100px;
-    top: 0;
-}
-
-.ayuda{
-    width: 200px;
-    height: 200px;
-    margin-bottom:20px;
-    display: inline-block;
-    position: relative;
-    left: 60px;
-    top: 0;
-}
-
-.help{
-    display: flex;
-    padding 50px;
-}
-.ayuda0{
-    width: 200px;
-    height: 1000px
-    margin-bottom:20px;
-    display b;
-    position: static;
-    top: 400px;
-    display: flex;
-
-}
-
-h6{
-   display: none;
-
-}
-
 h2{
     border-bottom: 4px solid #fff;
     text-align: center;
@@ -169,7 +54,27 @@ h2{
     color: #fff;
     font-size: 40px;
 }
-
+#palabra{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+.letra{
+    height: 50px;
+    width: 50px;
+    border: 2px solid #FF8A00;
+    background: #FCE8AE;
+    text-align: center;
+    margin: 4px;
+    font-weight: 600;
+    font-size: 30px;
+}
+.pintar{
+    background-color: #FF8A00;;
+}
+.pintarError{
+    background-color: red;
+}
 h3{
     margin: 25px 0;
     font-weight: normal;
@@ -179,7 +84,70 @@ h3{
 h3 span{
     font-style: italic;
 }
+button{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    background-color: transparent;
+    border: 2px solid #FF8A00;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    background-color: #FCE8AE;
+}
 
+#final{
+    display: none;
+    justify-content: center;
+    margin: 40px 0;
+}
+#juego{
+    display: none;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+#inicial{
+    display: block;
+    justify-content: center;
+    margin: 40px 0;
+}
+.ayuda0{
+    width: 200px;
+    height: 1000px
+    margin-bottom:20px;
+    display b;
+    position: static;
+    top: 400px;
+    border: 5px solid #FF8A00;
+}
+
+.ayuda1{
+    width: 200px;
+    height: 200px;
+    margin-bottom:20px;
+    display: inline-block;
+    position: relative;
+    left: 680px;
+    top: 0;
+}
+.opcion{
+   height: auto;
+    width: auto;
+    margin-bottom:20px;
+    text-align: center;
+    margin: 0px;
+    font-weight: 600;
+    font-size: 30px;
+    position: relative;
+}
 h4{
     border-bottom: 4px solid #fff;
     text-align: center;
@@ -189,6 +157,7 @@ h4{
 }
 
 h5{
+
     text-align: center;
     padding-bottom: 5px;
     color: #fff;
@@ -196,4 +165,8 @@ h5{
     border: 3px solid #FF8A00;
 
 }
-.
+
+h6{
+   display: none;
+
+}

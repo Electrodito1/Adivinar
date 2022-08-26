@@ -11,13 +11,15 @@
     <section>
         <div id="inicial" class="inicial">
             <img src="img/crear.png" alt="" id="imginicio" class="inicio">
-        <button class="btn" onclick="comenzarJuego()">COMENZAR A JUGAR</button>
-    </div>
+            <button class="btn" onclick="comenzarJuego()">COMENZAR A JUGAR</button>
+        </div>
 
 
         <div id="juego" class="juego">
-         <img src="img/crear.png" alt="" id="imgjuego", class="juego">
-        <h2>Adivina la Palabra</h2>
+        <div class="logo">
+            <img src="img/crear.png" alt="" id="imgjuego", class="imagen">
+           <h2>Adivina la Palabra</h2>
+        </div>
         <div id="palabra">
             <div class="letra pintar">G</div>
             <div class="letra">U</div>
@@ -28,29 +30,30 @@
             <div class="letra">R</div>
             <div class="letra">A</div>
         </div>
-    <div class="ayuda0">
-        <img src="img/GUITARRA.png" alt="" id="imagen", class="imagen">
-        <h3>Ayuda: <span id="ayuda"> </span> </h3>
-        <h6>Intentos restantes: <span id="intentos"></span></h6>
-        <h6>Letras ingresada: <span id="letrasIngresadas"></span></h6>
-
-
-    </div>
-    <div class="ayuda1">
-        <h4>Opciones</h4>
-        <h5> <span id="opcion" class="opcion"> Guitarra</span> </h5>
-        <h5> <span id="opcion1" class="opcion"> Guitarra</span> </h5>
-        <h5> <span id="opcion2" class="opcion"> Guitarra</span> </h5>
-    </div>
-
-
-        <button onclick="cargarNuevaPalabra()">Nueva Palabra</button>
-        <button onclick="terminarJuego()">Terminar</button>
-            </div>
+        <div  class="help">
+        <div class="ayuda0">
+            <img src="img/GUITARRA.png" alt="" id="imagen", class="imagen">
+        </div>
+        <div class="ayuda">
+            <h3>Ayuda: <span id="ayuda"> </span> </h3>
+            <h6>Intentos restantes: <span id="intentos"></span></h6>
+            <h6>Letras ingresada: <span id="letrasIngresadas"></span></h6>
+        </div>
+        <div class="ayuda1">
+            <h4>Opciones</h4>
+            <h5> <span id="opcion" class="opcion"> Guitarra</span> </h5>
+            <h5> <span id="opcion1" class="opcion"> Guitarra</span> </h5>
+            <h5> <span id="opcion2" class="opcion"> Guitarra</span> </h5>
+        </div>
+        <div>
+            <button onclick="cargarNuevaPalabra()">Nueva Palabra</button>
+            <button onclick="terminarJuego()">Terminar</button>
+        </div>
 
         <div id="final" class="final">
             <img src="img/crear.png" alt="" id="imgfinal" class="final">
-        <button onclick="volverAlInicio()">VOLVER AL INICIO</button>
+            <button onclick="volverAlInicio()">VOLVER AL INICIO</button>
+       </div>
     </div>
     </section>
 
